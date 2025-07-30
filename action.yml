@@ -4,15 +4,12 @@ inputs:
   nombre:
     description: "Nombre de la persona a saludar"
     required: true
-    default: "nombre"
   apellido:
     description: "Apellido de la persona a saludar"
     required: true
-    default: "apellido"
   edad:
     description: "Edad de la persona a saludar"
     required: true
-    default: 0
 runs:
   using: "node20"
   main: "dist/index.js"
