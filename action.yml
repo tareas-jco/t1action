@@ -11,7 +11,7 @@ inputs:
     default: "apellido"
   edad:
     description: "Edad de la persona a saludar"
-    required: false
+    required: true
     default: "0"
 runs:
   using: "node20"
