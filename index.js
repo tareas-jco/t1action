@@ -1,8 +1,11 @@
 const core=require('@actions/core');
 try {
-  const name = core.getInput('nombre');
-  const surname = core.getInput('apellido');
-  const age = core.getInput('edad');
+  const nombre = core.getInput('nombre');
+  const apellido = core.getInput('apellido');
+  const edad = core.getInput('edad');
+  if (!nombre || !apellido || !edad) {
+    throw new Error('Inputs "nombre", "apellido", and "edad" are required.');
+  }
   //core.setOutput('output', `Processed: ${input}`);
   console.log(`Hola ${name} ${surname}, tienes ${age} años.`);
 } catch (error) {
