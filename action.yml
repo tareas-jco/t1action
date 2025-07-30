@@ -12,7 +12,7 @@ inputs:
   edad:
     description: "Edad de la persona a saludar"
     required: true
-    default: "0"
+    default: 0
 runs:
   using: "node20"
   main: "dist/index.js"
