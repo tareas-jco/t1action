@@ -3,7 +3,7 @@ try {
   const name = core.getInput('nombre');
   const surname = core.getInput('apellido');
   const age = core.getInput('edad');
-  if (!nombre || !surname || !age) {
+  if (!name || !surname || !age) {
     throw new Error('Inputs "nombre", "apellido", and "edad" are required.');
   }
   //core.setOutput('output', `Processed: ${input}`);
