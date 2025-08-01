@@ -1,4 +1,4 @@
-const core=require('@actions/core');
+const core = require('@actions/core');
 try {
   const nombre = core.getInput('nombre');
   const apellido = core.getInput('apellido');
@@ -9,11 +9,11 @@ try {
   if (nombre == "Chilaquil") {
     core.info(`El año es bisiesto.`);
     const intEdad = parseInt(edad);
-    const anioActual = new Date().getFullYeßar();
+    const anioActual = new Date().getFullYear(); // Corregido aquí
     const anioNacimiento = anioActual - intEdad * 4;
     const cienAnios = anioNacimiento + 400;
-    core.info(`${nombre} ${apellido} nació el 29 de febrero de ${anioNacimiento} y cumplirá 100 años en el año ${cienAnios}.`); 
-  } else{
+    core.info(`${nombre} ${apellido} nació el 29 de febrero de ${anioNacimiento} y cumplirá 100 años en el año ${cienAnios}.`);
+  } else {
     core.info(`${nombre} ${apellido} tiene ${edad} años de edad.`);
   }
 } catch (error) {
