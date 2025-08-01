@@ -10,6 +10,9 @@ inputs:
   edad:
     description: "Edad de la persona a saludar"
     required: true
+  outputs:
+    multiplicacion:
+      description: "Saludo personalizado"
 runs:
   using: "node20"
   main: "dist/index.js"
