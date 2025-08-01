@@ -27573,7 +27573,7 @@ try {
   } else {
     core.info(`${nombre} ${apellido} tiene ${edad} años de edad.`);
   }
-  core.setOutput('multiplicación', edad *100 );
+  core.setOutput('multiplicacion', edad *100 );
 } catch (error) {
   core.setFailed(`Action failed with error: ${error.message}`);
 }
